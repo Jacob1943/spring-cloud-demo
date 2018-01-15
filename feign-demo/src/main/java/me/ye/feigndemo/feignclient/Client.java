@@ -1,5 +1,6 @@
-package me.ye.feigndemo.feignClient;
+package me.ye.feigndemo.feignclient;
 
+import me.ye.feigndemo.feignclient.fallback.ErrorFallback;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @date 15/01/2018
  */
 
-@FeignClient(name = "eureka-client-demo")
+@FeignClient(name = "eureka-client-demo", fallback = ErrorFallback.class)
 public interface Client {
 
 

@@ -11,3 +11,6 @@ eureka:
     prefer-ip-address: true
 
 
+feign:
+  hystrix:
+    enabled: true

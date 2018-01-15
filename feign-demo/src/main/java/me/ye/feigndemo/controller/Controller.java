@@ -1,6 +1,6 @@
 package me.ye.feigndemo.controller;
 
-import me.ye.feigndemo.feignClient.Client;
+import me.ye.feigndemo.feignclient.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
