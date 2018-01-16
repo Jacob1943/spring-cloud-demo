@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @date 15/01/2018
  */
 
+
 @FeignClient(name = "eureka-client-demo", fallback = ErrorFallback.class)
 public interface Client {
 
