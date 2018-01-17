@@ -1,0 +1,17 @@
+server:
+  port: 8006
+spring:
+  application:
+    name: turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true
+
+turbine:
+  app-config: feign-demo,ribbon-demo
+  cluster-name-expression: "'default'"
+  combine-host-port: true
+

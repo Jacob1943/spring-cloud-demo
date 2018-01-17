@@ -1,6 +1,6 @@
 package me.ye.feigndemo.feignclient.fallback;
 
-import me.ye.feigndemo.feignclient.Client;
+import me.ye.feigndemo.feignclient.DemoFeignClient;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class ErrorFallback implements Client {
+public class ErrorFallback implements DemoFeignClient {
 
     @Override
     public String hello() {
