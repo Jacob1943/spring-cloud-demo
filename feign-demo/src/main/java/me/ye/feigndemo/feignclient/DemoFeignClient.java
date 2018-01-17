@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 //@FeignClient(name = "eureka-client-demo", fallbackFactory = ErrorFallbackFactory.class)
 //@FeignClient(name = "eureka-client-demo", configuration = DisableHystrix.class)
 @FeignClient(name = "eureka-client-demo", fallback = ErrorFallback.class)
-public interface Client {
+public interface DemoFeignClient {
 
 
     @GetMapping("/hello")
