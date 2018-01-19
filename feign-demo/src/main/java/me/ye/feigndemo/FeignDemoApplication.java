@@ -8,7 +8,6 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 
 @EnableCircuitBreaker
-@EnableDiscoveryClient
 @EnableFeignClients
 @SpringBootApplication
 public class FeignDemoApplication {
