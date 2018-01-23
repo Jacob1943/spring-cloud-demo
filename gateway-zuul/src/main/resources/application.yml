@@ -12,16 +12,15 @@ eureka:
 management:
   security:
     enabled: false
-zuul:
-  ignored-services: '*'
-  routes:
-    ribbon-route:
-      #url: http://localhost:8003/
-      service-id: ribbon-demo
-      path: /ribbon/**
+
 logging:
   level:
     com.netflix: DEBUG
+
+zuul:
+  AccessFilter:
+    pre:
+      disable: true
 
 
 
