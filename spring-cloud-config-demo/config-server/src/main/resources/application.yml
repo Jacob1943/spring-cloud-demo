@@ -7,4 +7,10 @@ spring:
         git:
           uri: https://github.com/Jacob1943/demo-config-repo.git
 server:
-  port: 1001
+  port: 8008
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true
