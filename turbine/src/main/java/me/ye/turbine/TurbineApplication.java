@@ -2,10 +2,11 @@ package me.ye.turbine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.turbine.EnableTurbine;
+import org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream;
 
 
-@EnableTurbine
+//@EnableTurbine
+@EnableTurbineStream
 @SpringBootApplication
 public class TurbineApplication {
 

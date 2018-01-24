@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: turbine
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
@@ -10,8 +15,8 @@ eureka:
   instance:
     prefer-ip-address: true
 
-turbine:
-  app-config: feign-demo,ribbon-demo
-  cluster-name-expression: "'default'"
-  combine-host-port: true
+#turbine:
+#  app-config: feign-demo,ribbon-demo
+#  cluster-name-expression: "'default'"
+#  combine-host-port: true
 
