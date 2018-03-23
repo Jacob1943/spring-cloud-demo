@@ -1,0 +1,19 @@
+server:
+  port: 8010
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+spring:
+  application:
+    name: stream-sender
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test1
